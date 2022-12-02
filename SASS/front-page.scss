@@ -1,0 +1,50 @@
+@import 'variables-and-utilities';
+
+.front-page-banner {
+    position: relative;
+    width: 100%;
+    img {
+       width: 100%;
+       height: auto;
+        
+    }
+    .front-page-header {
+        background-color: rgba(220, 220, 220, 0.5);
+        position: absolute;
+        width: 100%;
+        height: auto;
+        z-index: 10;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.front-page-banner-text {
+    font-size: 30px;
+    width: 30%;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+@media screen and (max-width: 2100px) {
+    .front-page-banner {
+        max-width: 100%;
+        margin: auto;
+        h1 {font-size: 2vw;}
+        h2 {font-size: 1.5vw;}
+        h3 {font-size: 1vw;}
+        p  {font-size: 20px;}
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .front-page-banner.mobile {
+        h1 {font-size: 6vw;}
+        h2 {font-size: 4vw;}
+    }
+
+    .front-page-banner-text.mobile {
+        width: 90%;
+    }   
+}

@@ -1,0 +1,523 @@
+/*------------------------- SASS Variables ------------------------*/
+/*------------------------- Utility Classes ------------------------*/
+.white {
+  color: #ffffff;
+}
+.black {
+  color: #000000;
+}
+.pink {
+  color: #d8226b;
+}
+.grey {
+  color: grey;
+}
+.no-margin {
+  margin: 0;
+}
+.no-padding {
+  padding: 0;
+}
+.width-50 {
+  max-width: 50%;
+}
+.width-25 {
+  max-width: 25%;
+}
+.width-75 {
+  max-width: 75%;
+}
+.width-100 {
+  max-width: 100%;
+}
+.t-center {
+  text-align: center !important;
+}
+.t-left {
+  text-align: left !important;
+}
+.t-right {
+  text-align: right !important;
+}
+.wpforms-container {
+  width: 100% !important;
+}
+.bottom {
+  margin-bottom: 60px;
+}
+.margin {
+  margin: auto;
+}
+.normal {
+  font-style: normal !important;
+}
+/*------------------------- Nav Bar ------------------------*/
+nav {
+  width: 100;
+  box-sizing: border-box;
+  text-align: initial;
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 99999;
+}
+.nav-bar-links {
+  display: flex;
+}
+.nav-bar-links li {
+  list-style: none;
+  margin: 10px;
+  padding-left: 20px;
+}
+.nav-bar-links li a {
+  text-decoration: none;
+  font-size: 20px;
+}
+.nav-bar-links li a:hover {
+  text-decoration: underline white;
+}
+.nav-bar-logo {
+  margin-left: 20px;
+}
+.top-nav-dropdown {
+  position: relative;
+}
+.top-nav-dropdown-menu {
+  display: flex;
+  position: absolute;
+  box-sizing: border-box;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 100%;
+  flex-direction: column;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.22);
+  z-index: 99999;
+}
+.top-nav-dropdown-item {
+  display: none;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+#about-us-link:hover #faq-link {
+  display: block;
+}
+.mobile-toggle-button {
+  list-style: none;
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  display: none;
+}
+.mobile-toggle-button a {
+  font-size: 50px;
+  padding: 10px;
+}
+.mobile-toggle-button:hover {
+  opacity: 0.5;
+}
+.current-menu-item a {
+  font-weight: 900;
+}
+#desktop-dropdown-icon {
+  display: inline;
+}
+#mobile-dropdown-icon {
+  display: none;
+}
+/*------------------------- Nav Bar Mobile ------------------------*/
+@media screen and (max-width: 800px) {
+  nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+  }
+  .nav-bar-links {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 58px;
+    left: 0;
+    padding-left: 0;
+    padding-right: 30%;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.22);
+    transform: translateX(-600px);
+    transition: transform 0.3s 0s;
+  }
+  .mobile-toggle-button {
+    display: block;
+  }
+  .nav-bar-logo {
+    margin: auto;
+  }
+  .nav-bar-links.mobile {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 58px;
+    left: 0;
+    padding-left: 0;
+    padding-right: 30%;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.22);
+    transform: translateX(0px);
+    transition: transform 0.3s 0s;
+    z-index: 99999;
+  }
+  .top-nav-dropdown-menu {
+    display: inline;
+    margin-top: -5px;
+  }
+  #desktop-dropdown-icon {
+    display: none;
+  }
+  #mobile-dropdown-icon {
+    display: inline;
+  }
+}
+/*------------------------- SASS Variables ------------------------*/
+/*------------------------- Utility Classes ------------------------*/
+.white {
+  color: #ffffff;
+}
+.black {
+  color: #000000;
+}
+.pink {
+  color: #d8226b;
+}
+.grey {
+  color: grey;
+}
+.no-margin {
+  margin: 0;
+}
+.no-padding {
+  padding: 0;
+}
+.width-50 {
+  max-width: 50%;
+}
+.width-25 {
+  max-width: 25%;
+}
+.width-75 {
+  max-width: 75%;
+}
+.width-100 {
+  max-width: 100%;
+}
+.t-center {
+  text-align: center !important;
+}
+.t-left {
+  text-align: left !important;
+}
+.t-right {
+  text-align: right !important;
+}
+.wpforms-container {
+  width: 100% !important;
+}
+.bottom {
+  margin-bottom: 60px;
+}
+.margin {
+  margin: auto;
+}
+.normal {
+  font-style: normal !important;
+}
+.welfare-officer span {
+  display: none;
+}
+.welfare-officer:hover {
+  cursor: pointer;
+}
+.welfare-officer:hover span {
+  display: block;
+}
+.committee-container {
+  width: 30%;
+}
+.coaches-container {
+  width: 50%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.coaches-container :nth-child(3), .coaches-container .coaches-container-image, .coaches-container h2 {
+  grid-column: 1 / 3;
+}
+.committee-container, .coaches-container {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  margin: auto;
+  border-radius: 19px;
+  margin-bottom: 40px;
+}
+.committee-container h2, .coaches-container h2 {
+  padding-top: 0;
+  margin-top: 0;
+}
+.committee-container p, .coaches-container p {
+  font-size: 26px;
+  padding: 0;
+  margin: 0;
+}
+.committee-members {
+  padding-bottom: 20px;
+}
+.coach-profile {
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: left;
+  padding-bottom: 20px;
+}
+.coach-profile h5 {
+  font-size: 30px;
+  font-weight: 800;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.coach-profile h6 {
+  font-size: 26px;
+  padding: 0;
+  margin: 0;
+  font-weight: 100;
+}
+.coach-profile p {
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+}
+@media screen and (max-width: 800px) {
+  .about-us-content {
+    width: 90% !important;
+    max-width: unset !important;
+  }
+  .committee-container, .coaches-container {
+    width: 90%;
+  }
+  .committee-container h2, .coaches-container h2 {
+    font-size: 8vw;
+  }
+  .committee-container h5, .coaches-container h5 {
+    font-size: 6vw;
+  }
+  .committee-container h6, .coaches-container h6 {
+    font-size: 5vw;
+  }
+  .committee-container p, .coaches-container p {
+    font-size: 4vw;
+  }
+}
+/*------------------------- SASS Variables ------------------------*/
+/*------------------------- Utility Classes ------------------------*/
+.white {
+  color: #ffffff;
+}
+.black {
+  color: #000000;
+}
+.pink {
+  color: #d8226b;
+}
+.grey {
+  color: grey;
+}
+.no-margin {
+  margin: 0;
+}
+.no-padding {
+  padding: 0;
+}
+.width-50 {
+  max-width: 50%;
+}
+.width-25 {
+  max-width: 25%;
+}
+.width-75 {
+  max-width: 75%;
+}
+.width-100 {
+  max-width: 100%;
+}
+.t-center {
+  text-align: center !important;
+}
+.t-left {
+  text-align: left !important;
+}
+.t-right {
+  text-align: right !important;
+}
+.wpforms-container {
+  width: 100% !important;
+}
+.bottom {
+  margin-bottom: 60px;
+}
+.margin {
+  margin: auto;
+}
+.normal {
+  font-style: normal !important;
+}
+footer {
+  width: 75%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+footer .footer-text {
+  padding-left: 50px;
+  padding-top: 20px;
+  display: block;
+}
+footer .footer-logos {
+  display: block;
+  padding-left: 50px;
+  padding-top: 20px;
+}
+footer p {
+  font-size: 15px !important;
+}
+footer p a {
+  text-decoration: none;
+}
+footer ul {
+  flex-direction: column;
+}
+footer ul li {
+  list-style: none;
+}
+footer ul li a {
+  text-decoration: none;
+}
+#current-menu-item {
+  font-weight: 800;
+}
+@media screen and (max-width: 800px) {
+  footer {
+    flex-direction: column;
+    margin: auto !important;
+    width: 90%;
+  }
+  footer p {
+    font-size: 2vw !important;
+    margin: auto !important;
+  }
+  .footer-logos img {
+    max-width: 100%;
+  }
+}
+/*------------------------- SASS Variables ------------------------*/
+/*------------------------- Utility Classes ------------------------*/
+.white {
+  color: #ffffff;
+}
+.black {
+  color: #000000;
+}
+.pink {
+  color: #d8226b;
+}
+.grey {
+  color: grey;
+}
+.no-margin {
+  margin: 0;
+}
+.no-padding {
+  padding: 0;
+}
+.width-50 {
+  max-width: 50%;
+}
+.width-25 {
+  max-width: 25%;
+}
+.width-75 {
+  max-width: 75%;
+}
+.width-100 {
+  max-width: 100%;
+}
+.t-center {
+  text-align: center !important;
+}
+.t-left {
+  text-align: left !important;
+}
+.t-right {
+  text-align: right !important;
+}
+.wpforms-container {
+  width: 100% !important;
+}
+.bottom {
+  margin-bottom: 60px;
+}
+.margin {
+  margin: auto;
+}
+.normal {
+  font-style: normal !important;
+}
+body {
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  word-wrap: break-word;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  opacity: 0.5;
+}
+a.primary-button {
+  font-size: 30px;
+  max-width: 500px;
+  margin: auto;
+  padding-left: 5px;
+  padding-right: 5px;
+  transition: opacity 0.33s;
+}
+.secondary-button {
+  font-size: 40px;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  padding-left: 5px;
+  padding-right: 5px;
+  max-width: 600px;
+  margin: auto;
+  transition: opacity 0.33s;
+}
+@media screen and (max-width: 800px) {
+  body {
+    max-width: 100%;
+    margin: auto;
+  }
+  body h1 {
+    font-size: 6vw;
+  }
+  body h2 {
+    font-size: 4vw;
+  }
+  body h3 {
+    font-size: 2vw;
+  }
+  body p {
+    font-size: 20px;
+  }
+}
+.wpforms-container-full {
+  max-width: 50%;
+}
+/*# sourceMappingURL=data:application/json,%7B%22version%22%3A3%2C%22sourceRoot%22%3A%22http%3A%2F%2Ftwdiving.local%2F%22%2C%22sources%22%3A%5B%22G%3A%2FWeb%20Development%2FWordpress%20Websites%20NEW%2Ftwdiving%2Fapp%2Fpublic%2Fwp-content%2Fthemes%2Ftunbridge-wells-diving-custom%2FSASS%2Fstyle.scss%22%2C%22G%3A%2FWeb%20Development%2FWordpress%20Websites%20NEW%2Ftwdiving%2Fapp%2Fpublic%2Fwp-content%2Fthemes%2Ftunbridge-wells-diving-custom%2FSASS%2Fvariables-and-utilities.scss%22%2C%22G%3A%2FWeb%20Development%2FWordpress%20Websites%20NEW%2Ftwdiving%2Fapp%2Fpublic%2Fwp-content%2Fthemes%2Ftunbridge-wells-diving-custom%2FSASS%2Fnav-bar.scss%22%2C%22G%3A%2FWeb%20Development%2FWordpress%20Websites%20NEW%2Ftwdiving%2Fapp%2Fpublic%2Fwp-content%2Fthemes%2Ftunbridge-wells-diving-custom%2FSASS%2Fcommittee-and-coaches.scss%22%2C%22G%3A%2FWeb%20Development%2FWordpress%20Websites%20NEW%2Ftwdiving%2Fapp%2Fpublic%2Fwp-content%2Fthemes%2Ftunbridge-wells-diving-custom%2FSASS%2Ffooter.scss%22%5D%2C%22names%22%3A%5B%5D%2C%22mappings%22%3A%22AAAA%3BAAAA%3BACIA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BADpBA%3BAEGA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAaA%3BAAAA%3BAAAA%3BAAEI%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAIE%3BAAAA%3BAAAA%3BAAAA%3BAAIA%3BAAAA%3BAAAA%3BAAON%3BAAAA%3BAAAA%3BAAIA%3BAAAA%3BAAAA%3BAAIA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAYA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAASA%3BAAAA%3BAAAA%3BAAGA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAME%3BAAAA%3BAAAA%3BAAAA%3BAAMF%3BAAAA%3BAAAA%3BAAIA%3BAAAA%3BAAAA%3BAAIA%3BAAAA%3BAAAA%3BAAIA%3BAAAA%3BAAAA%3BAFzFA%3BAE8FC%3BAACI%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAOD%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAYA%3BAAAA%3BAAAA%3BAAGA%3BAAAA%3BAAAA%3BAAIA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAaA%3BAAAA%3BAAAA%3BAAAA%3BAAKA%3BAAAA%3BAAAA%3BAAIA%3BAAAA%3BAAAA%3BAAAA%3BAF%2FIJ%3BAAAA%3BACIA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAEhBA%3BAAAA%3BAAAA%3BAAMA%3BAAAA%3BAAAA%3BAAEI%3BAAAA%3BAAAA%3BAAOJ%3BAAAA%3BAAAA%3BAAIA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAII%3BAAAA%3BAAAA%3BAAKJ%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAMG%3BAAAA%3BAAAA%3BAAAA%3BAAKC%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAOJ%3BAAAA%3BAAAA%3BAAIA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAMI%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAOA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAOA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAOJ%3BAACI%3BAAAA%3BAAAA%3BAAAA%3BAAKA%3BAAAA%3BAAAA%3BAAGI%3BAAAA%3BAAAA%3BAAGA%3BAAAA%3BAAAA%3BAAGA%3BAAAA%3BAAAA%3BAAGA%3BAAAA%3BAAAA%3BAAAA%3BAHnGR%3BAAAA%3BACIA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAGlBA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAOI%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAMA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAMA%3BAAAA%3BAAAA%3BAAIA%3BAAAA%3BAAAA%3BAAIA%3BAAAA%3BAAAA%3BAAEI%3BAAAA%3BAAAA%3BAAEI%3BAAAA%3BAAAA%3BAAQZ%3BAAAA%3BAAAA%3BAAIA%3BAACI%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAKI%3BAAAA%3BAAAA%3BAAAA%3BAAMJ%3BAAAA%3BAAAA%3BAAAA%3BAJzDJ%3BAAAA%3BACIA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BADhBA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAOA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAAEA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAWA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAWC%3BAACG%3BAAAA%3BAAAA%3BAAAA%3BAAGI%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAAAA%3BAASR%3BAAAA%3BAAAA%22%7D */

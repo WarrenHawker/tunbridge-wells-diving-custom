@@ -1,0 +1,182 @@
+/*------------------------- SASS Variables ------------------------*/
+/*------------------------- Utility Classes ------------------------*/
+.white {
+  color: #ffffff;
+}
+.black {
+  color: #000000;
+}
+.pink {
+  color: #d8226b;
+}
+.grey {
+  color: grey;
+}
+.no-margin {
+  margin: 0;
+}
+.no-padding {
+  padding: 0;
+}
+.width-50 {
+  max-width: 50%;
+}
+.width-25 {
+  max-width: 25%;
+}
+.width-75 {
+  max-width: 75%;
+}
+.width-100 {
+  max-width: 100%;
+}
+.t-center {
+  text-align: center !important;
+}
+.t-left {
+  text-align: left !important;
+}
+.t-right {
+  text-align: right !important;
+}
+.wpforms-container {
+  width: 100% !important;
+}
+.bottom {
+  margin-bottom: 60px;
+}
+.margin {
+  margin: auto;
+}
+.normal {
+  font-style: normal !important;
+}
+/*------------------------- Nav Bar ------------------------*/
+nav {
+  width: 100;
+  box-sizing: border-box;
+  text-align: initial;
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 99999;
+}
+.nav-bar-links {
+  display: flex;
+}
+.nav-bar-links li {
+  list-style: none;
+  margin: 10px;
+  padding-left: 20px;
+}
+.nav-bar-links li a {
+  text-decoration: none;
+  font-size: 20px;
+}
+.nav-bar-links li a:hover {
+  text-decoration: underline white;
+}
+.nav-bar-logo {
+  margin-left: 20px;
+}
+.top-nav-dropdown {
+  position: relative;
+}
+.top-nav-dropdown-menu {
+  display: flex;
+  position: absolute;
+  box-sizing: border-box;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 100%;
+  flex-direction: column;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.22);
+  z-index: 99999;
+}
+.top-nav-dropdown-item {
+  display: none;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+#about-us-link:hover #faq-link {
+  display: block;
+}
+.mobile-toggle-button {
+  list-style: none;
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  display: none;
+}
+.mobile-toggle-button a {
+  font-size: 50px;
+  padding: 10px;
+}
+.mobile-toggle-button:hover {
+  opacity: 0.5;
+}
+.current-menu-item a {
+  font-weight: 900;
+}
+#desktop-dropdown-icon {
+  display: inline;
+}
+#mobile-dropdown-icon {
+  display: none;
+}
+/*------------------------- Nav Bar Mobile ------------------------*/
+@media screen and (max-width: 800px) {
+  nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+  }
+  .nav-bar-links {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 58px;
+    left: 0;
+    padding-left: 0;
+    padding-right: 30%;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.22);
+    transform: translateX(-600px);
+    transition: transform 0.3s 0s;
+  }
+  .mobile-toggle-button {
+    display: block;
+  }
+  .nav-bar-logo {
+    margin: auto;
+  }
+  .nav-bar-links.mobile {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 58px;
+    left: 0;
+    padding-left: 0;
+    padding-right: 30%;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.22);
+    transform: translateX(0px);
+    transition: transform 0.3s 0s;
+    z-index: 99999;
+  }
+  .top-nav-dropdown-menu {
+    display: inline;
+    margin-top: -5px;
+  }
+  #desktop-dropdown-icon {
+    display: none;
+  }
+  #mobile-dropdown-icon {
+    display: inline;
+  }
+}
+/*# sourceMappingURL=data:application/json,%7B%22version%22%3A3%2C%22sourceRoot%22%3A%22http%3A%2F%2Ftwdiving.local%2F%22%2C%22sources%22%3A%5B%22G%3A%2FWeb%20Development%2FWordpress%20Websites%20NEW%2Ftwdiving%2Fapp%2Fpublic%2Fwp-content%2Fthemes%2Ftunbridge-wells-diving-custom%2FSASS%2Fnav-bar.scss%22%2C%22G%3A%2FWeb%20Development%2FWordpress%20Websites%20NEW%2Ftwdiving%2Fapp%2Fpublic%2Fwp-content%2Fthemes%2Ftunbridge-wells-diving-custom%2FSASS%2Fvariables-and-utilities.scss%22%5D%2C%22names%22%3A%5B%5D%2C%22mappings%22%3A%22AAAA%3BAAAA%3BACIA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BADpBA%3BAAGA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAaA%3BAAAA%3BAAAA%3BAAEI%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAIE%3BAAAA%3BAAAA%3BAAAA%3BAAIA%3BAAAA%3BAAAA%3BAAON%3BAAAA%3BAAAA%3BAAIA%3BAAAA%3BAAAA%3BAAIA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAYA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAASA%3BAAAA%3BAAAA%3BAAGA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAME%3BAAAA%3BAAAA%3BAAAA%3BAAMF%3BAAAA%3BAAAA%3BAAIA%3BAAAA%3BAAAA%3BAAIA%3BAAAA%3BAAAA%3BAAIA%3BAAAA%3BAAAA%3BAAzFA%3BAA8FC%3BAACI%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAOD%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAYA%3BAAAA%3BAAAA%3BAAGA%3BAAAA%3BAAAA%3BAAIA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAaA%3BAAAA%3BAAAA%3BAAAA%3BAAKA%3BAAAA%3BAAAA%3BAAIA%3BAAAA%3BAAAA%3BAAAA%22%7D */

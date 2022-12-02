@@ -1,0 +1,56 @@
+@import 'nav-bar';
+@import 'committee-and-coaches';
+@import 'footer';
+@import 'variables-and-utilities';
+body {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    word-wrap: break-word;
+ }
+
+a {text-decoration: none;}
+a:hover {opacity: 0.5;}
+
+a.primary-button {
+    font-size: 30px;
+    max-width: 500px;
+    margin: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    transition: opacity 0.33s; 
+}
+
+
+
+.secondary-button {
+    font-size: 40px;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    padding-left: 5px;
+    padding-right: 5px;
+    max-width: 600px;
+    margin: auto;
+    transition: opacity 0.33s;
+}
+
+ @media screen and (max-width: 800px) {
+    body {
+        max-width: 100%;
+        margin: auto;
+        h1 {font-size: 6vw;}
+        h2 {font-size: 4vw;}
+        h3 {font-size: 2vw;}
+        p  {font-size: 20px;}
+    }
+
+}
+
+// div.wpforms-container-full .wpforms-form * {
+//     margin: auto !important;
+// }
+
+.wpforms-container-full {
+    max-width: 50%;
+}
+

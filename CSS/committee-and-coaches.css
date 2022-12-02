@@ -1,0 +1,136 @@
+/*------------------------- SASS Variables ------------------------*/
+/*------------------------- Utility Classes ------------------------*/
+.white {
+  color: #ffffff;
+}
+.black {
+  color: #000000;
+}
+.pink {
+  color: #d8226b;
+}
+.grey {
+  color: grey;
+}
+.no-margin {
+  margin: 0;
+}
+.no-padding {
+  padding: 0;
+}
+.width-50 {
+  max-width: 50%;
+}
+.width-25 {
+  max-width: 25%;
+}
+.width-75 {
+  max-width: 75%;
+}
+.width-100 {
+  max-width: 100%;
+}
+.t-center {
+  text-align: center !important;
+}
+.t-left {
+  text-align: left !important;
+}
+.t-right {
+  text-align: right !important;
+}
+.wpforms-container {
+  width: 100% !important;
+}
+.bottom {
+  margin-bottom: 60px;
+}
+.margin {
+  margin: auto;
+}
+.normal {
+  font-style: normal !important;
+}
+.welfare-officer span {
+  display: none;
+}
+.welfare-officer:hover {
+  cursor: pointer;
+}
+.welfare-officer:hover span {
+  display: block;
+}
+.committee-container {
+  width: 30%;
+}
+.coaches-container {
+  width: 50%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.coaches-container :nth-child(3), .coaches-container .coaches-container-image, .coaches-container h2 {
+  grid-column: 1 / 3;
+}
+.committee-container, .coaches-container {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  margin: auto;
+  border-radius: 19px;
+  margin-bottom: 40px;
+}
+.committee-container h2, .coaches-container h2 {
+  padding-top: 0;
+  margin-top: 0;
+}
+.committee-container p, .coaches-container p {
+  font-size: 26px;
+  padding: 0;
+  margin: 0;
+}
+.committee-members {
+  padding-bottom: 20px;
+}
+.coach-profile {
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: left;
+  padding-bottom: 20px;
+}
+.coach-profile h5 {
+  font-size: 30px;
+  font-weight: 800;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.coach-profile h6 {
+  font-size: 26px;
+  padding: 0;
+  margin: 0;
+  font-weight: 100;
+}
+.coach-profile p {
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+}
+@media screen and (max-width: 800px) {
+  .about-us-content {
+    width: 90% !important;
+    max-width: unset !important;
+  }
+  .committee-container, .coaches-container {
+    width: 90%;
+  }
+  .committee-container h2, .coaches-container h2 {
+    font-size: 8vw;
+  }
+  .committee-container h5, .coaches-container h5 {
+    font-size: 6vw;
+  }
+  .committee-container h6, .coaches-container h6 {
+    font-size: 5vw;
+  }
+  .committee-container p, .coaches-container p {
+    font-size: 4vw;
+  }
+}
+/*# sourceMappingURL=data:application/json,%7B%22version%22%3A3%2C%22sourceRoot%22%3A%22http%3A%2F%2Ftwdiving.local%2F%22%2C%22sources%22%3A%5B%22G%3A%2FWeb%20Development%2FWordpress%20Websites%20NEW%2Ftwdiving%2Fapp%2Fpublic%2Fwp-content%2Fthemes%2Ftunbridge-wells-diving-custom%2FSASS%2Fcommittee-and-coaches.scss%22%2C%22G%3A%2FWeb%20Development%2FWordpress%20Websites%20NEW%2Ftwdiving%2Fapp%2Fpublic%2Fwp-content%2Fthemes%2Ftunbridge-wells-diving-custom%2FSASS%2Fvariables-and-utilities.scss%22%5D%2C%22names%22%3A%5B%5D%2C%22mappings%22%3A%22AAAA%3BAAAA%3BACIA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BAACA%3BAAAA%3BAAAA%3BADhBA%3BAAAA%3BAAAA%3BAAMA%3BAAAA%3BAAAA%3BAAEI%3BAAAA%3BAAAA%3BAAOJ%3BAAAA%3BAAAA%3BAAIA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAII%3BAAAA%3BAAAA%3BAAKJ%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAMG%3BAAAA%3BAAAA%3BAAAA%3BAAKC%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAOJ%3BAAAA%3BAAAA%3BAAIA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAMI%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAOA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAOA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAOJ%3BAACI%3BAAAA%3BAAAA%3BAAAA%3BAAKA%3BAAAA%3BAAAA%3BAAGI%3BAAAA%3BAAAA%3BAAGA%3BAAAA%3BAAAA%3BAAGA%3BAAAA%3BAAAA%3BAAGA%3BAAAA%3BAAAA%3BAAAA%22%7D */
